@@ -1,0 +1,20 @@
+{
+  "name": "ca",
+  "version": "1.0.0",
+  "description": "CA server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ca.js"
+  },
+  "keywords": [
+    "CA"
+  ],
+  "author": "Francesco Montano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "shelljs": "^0.8.3"
+  }
+}

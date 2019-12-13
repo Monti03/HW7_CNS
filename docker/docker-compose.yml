@@ -1,0 +1,34 @@
+version: "2"
+
+services:
+  
+  ca:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./CA/:/home/node/app
+    command: "npm start"
+   
+    ports:
+      - "8080:8000"
+    expose:
+      - 8000 
+  
+  myserver:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./MyServer/:/home/node/app
+    command: "npm start"
+  
+    ports:
+      - "8081:8000"
+    expose:
+      - 8000 
+  
