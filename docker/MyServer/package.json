@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "form-data": "^3.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "poster": "0.0.9",
     "request": "^2.88.0",
     "shelljs": "^0.8.3",
